@@ -65,8 +65,7 @@ body {
     left: 0;
     height: 60px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    ;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +201,8 @@ body {
 }
 
 .buttonHero:hover {
-    box-shadow: 0 0 5px var(--main-color-shadow);
+    box-shadow: 0 0 5px var(--main-color-less);
+    background-color: var(--main-color-less);
 }
 
 /*TEAMS*/
@@ -495,10 +495,10 @@ body {
     border-radius: 20px;
     text-align: center;
     padding: 15px 100px;
-    width: 30%;
+    width: 40px;
     text-decoration: none;
     color: white;
-    font-weight: 700;
+    font-weight: bold;
     transition: all 0.5s;
 }
 
@@ -553,63 +553,49 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.contact-content-container {
-    display: grid;
-    grid-template-columns: 350px 550px;
-    grid-column-gap: 20px;
     justify-content: center;
 }
 
 /*SOCIAL*/
-.social-media {
-    flex-basis: 40%;
-    position: relative;
+.social {
     background-color: white;
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 3rem;
+    padding: 5px;
 }
 
-.social-media h3 {
+.social h3 {
     font-size: 20px;
-    font-weight: bold;
-    margin-left: 25px;
-    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 4px;
 }
 
-.social-media p {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.social p {
+    margin: 5px 0 5px 20px;
 }
 
-.social-media ul li {
+.social ul li {
     list-style: none;
     display: inline-block;
     margin-right: 30px;
-    padding: 0;
-}
-
-.social-media ul li ion-icon {
-    font-size: 18px;
+    font-size: 20px;
     color: #F43B86;
 }
 
-.social-media ul li ion-icon:hover {
-    font-size: 18px;
+.social ul li:hover {
     color: #3B185F;
 }
 
 /*FORMULARIO*/
 form {
-    flex-basis: 60%;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
-    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 .firstLineForm {
@@ -712,12 +698,12 @@ form {
 
 @media (max-width: 1000px){
     .hamburguerMenu{
-        display: block;
+        display: none;
         cursor: pointer;
     }
 
     .menuItem{
-        display: none;
+        display: block;
     }
 
     .menuItem:last-child{
@@ -855,13 +841,14 @@ form {
     }
 
     .contact-content-container{
-        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        
     }
-
 
     .sendButton{
         margin-top: 1.5rem;
         width: 50%;
         height: 40px;
+        align-self: center;
     }
 }

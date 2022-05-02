@@ -13,14 +13,14 @@
         <div class="logo-container">
             <img src="img/logo.png" class="logo">
         </div>
-        <div class="menu-container">
+        <div class="menu-container" id="menuList">
             <span class="menuItem"> <a href="#" class="menuItemLink"> HOME </a> </span>
             <span class="menuItem"> <a href="#teams" class="menuItemLink"> TEAMS </a> </span>
             <span class="menuItem"> <a href="#matchs" class="menuItemLink"> MATCHS </a> </span>
             <span class="menuItem"> <a href="#news" class="menuItemLink"> NEWS </a> </span>
             <span class="menuItem"> <a href="#contact" class="menuItemLink"> CONTACT </a> </span>
         </div>
-        <div class="hamburguerMenu">
+        <div class="hamburguerMenu" onclick="togglemenu()">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!--- TEAMS --->
     <div class="teams" id="teams">
@@ -192,8 +192,7 @@
         <div class="contact-container-section">
             <h2 class="contact-title">CONTACT <b style="color: #F43B86;">VIPERS</b></h2>
             <div class="contact-content-container">
-                <!----------------------------------------------------------------->
-                <div class="social-media">
+                <div class="social">
                     <h3>General consultation</h3>
                     <p>info@vipers.com.ar</p>
                     <h3>Wanna be part of <b style="color: #F43B86;">vipers</b>?</h3>
@@ -221,7 +220,6 @@
                         </li>
                     </ul>
                 </div>
-                <!----------------------------------------------------------------->
                 <form action="" method="post">
                     <div class="firstLineForm">
                         <div class="inputContainer">
@@ -237,7 +235,7 @@
                             <span class="inputLine2"></span>
                         </div>
                     </div>
-    
+
                     <div class="inputContainer" style="width: 100%; margin-right: 0;">
                         <label for="subject" class="inputLabel">Subject</label>
                         <input type="text" name="subject" class="nameInput" id="">
@@ -250,9 +248,10 @@
                         <span class="inputLine"></span>
                         <span class="inputLine2"></span>
                     </div>
-    
+
                     <input class="sendButton" type="button" type="submit" value="send">
                 </form>
+
             </div>
         </div>
     </div>
